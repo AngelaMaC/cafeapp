@@ -4,6 +4,8 @@ import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import Home from './HomeComponent';
 import Directory from './DirectoryComponent';
 import MenuInfo from './MenuInfoComponent';
+import About from './AboutComponent';
+import Contact from './ContactComponent';
 console.disableYellowBox = true;
 
 const DirectoryNavigator = createStackNavigator(
@@ -42,10 +44,45 @@ const HomeNavigator = createStackNavigator(
     }
 );
 
+const AboutNavigator = createStackNavigator(
+    {
+        About: { screen: About }
+    },
+    {
+        navigationOptions: {
+            headerStyle: {
+                backgroundColor: '#336B37'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+const ContactNavigator = createStackNavigator(
+    {
+        Contact: { screen: Contact }
+    },
+    {
+        navigationOptions: {
+            headerStyle: {
+                backgroundColor: '#336B37'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+
 const MainNavigator = createDrawerNavigator(
     {
         Home: { screen: HomeNavigator },
-        Directory: { screen: DirectoryNavigator }
+        Directory: { screen: DirectoryNavigator },
+        About: { screen: AboutNavigator },
+        Contact: { screen: ContactNavigator }
     },
     {
         drawerBackgroundColor: '#dee7df'
@@ -66,24 +103,3 @@ class Main extends Component {
 }
 
 export default Main;
-
-
-// import React, { Component } from 'react';
-// import { View, Image } from 'react-native';
-
-
-// class Main extends Component {
-    
-//     render() {
-//         return(
-//             <View>
-//                 <Image 
-//                 style={{width: '100%', height: '85%'}}
-//                 source={require('../components/images/saladbowl.jpg')}
-//                 />
-//             </View>
-//         );
-//     }
-// }
-
-// export default Main;

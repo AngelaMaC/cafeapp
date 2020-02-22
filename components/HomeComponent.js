@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Image, Button, Text } from 'react-native';
+// import { Card } from 'react-native-elements';
+
 
 class Home extends Component {
 
@@ -8,9 +10,12 @@ class Home extends Component {
     }
 
     render() {
-        return (
+        return(
             <View>
-                <Text>Home Component</Text>
+                <Image 
+                style={{width: '100%', height: '85%'}}
+                source={require('./images/saladbowl.jpg')}
+                />                
             </View>
         );
     }
