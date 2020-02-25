@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { View, Platform } from 'react-native';
+import { View, Platform, StyleSheet } from 'react-native';
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import Home from './HomeComponent';
 import Directory from './DirectoryComponent';
 import MenuInfo from './MenuInfoComponent';
 import About from './AboutComponent';
 import Contact from './ContactComponent';
+import { Icon } from 'react-native-elements';
 console.disableYellowBox = true;
 
 const DirectoryNavigator = createStackNavigator(

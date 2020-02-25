@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { Text, View, ScrollView, FlatList } from 'react-native';
-import { Card } from 'react-native-elements';
+import { Card, Icon } from 'react-native-elements';
 import { MENUS } from '../shared/menus';
 import { REVIEWS } from '../shared/reviews'
 
 function RenderMenu({menu}) {   
+    
     if (menu) {
         return (
             <Card
                 featuredTitle={menu.name}
-                image={require('./images/saladbowl.jpg')}>
+                image={require('./images/ella-olsson-2IxTgsgFi-s-unsplash.jpg')}>
                 <Text style={{margin: 10}}>
                     {menu.description}
                 </Text>
@@ -23,16 +24,27 @@ function RenderReviews({reviews}) {
 
     const renderReviewItem = ({item}) => {
         return (
-            <View style={{margin: 10}}>
-                <Text style={{fontSize: 14}}>{item.text}</Text>
-                <Text style={{fontSize: 12}}>{item.rating} Stars</Text>
-                <Text style={{fontSize: 12}}>{`-- ${item.author}, ${item.date}`}</Text>
+            <View style={{margin: 5}}>
+                <Card 
+                image={item.image}>                
+                <Icon                    
+                    name='heart-o'
+                    type='font-awesome'
+                    color='#f50'
+                    size={10}
+                    raised
+                    reverse
+                    />                
+                <Text style={{fontSize: 14, fontWeight: 'bold'}}>{item.title}</Text>
+                <Text style={{fontSize: 12}}>{item.description}</Text>
+                <Text style={{fontSize: 11, fontStyle:'italic'}}>Allergen: {item.allergy}</Text></Card>
+               
             </View>
         );
     };
 
     return (
-        <Card title='Reviews'>
+        <Card title='Menu Items'>
             <FlatList
                 data={reviews}
                 renderItem={renderReviewItem}
@@ -48,9 +60,14 @@ class MenuInfo extends Component {
         super(props);
         this.state = {
             menus: MENUS,
-            reviews: REVIEWS
+            reviews: REVIEWS,
+            // favorite: false
         };
     }
+
+    // markFavorite() {
+    //     this.setState({favorite: true});
+    // }
 
     static navigationOptions = {
         title: 'Menu Information'
@@ -62,7 +79,10 @@ class MenuInfo extends Component {
         const reviews = this.state.reviews.filter(review => review.menuId === menuId);
         return (
             <ScrollView>
-                <RenderMenu menu={menu} />
+                <RenderMenu menu={menu}
+                    // favorite={this.state.favorite}
+                    // markFavorite={() => this.markFavorite()}
+                />
                 <RenderReviews reviews={reviews} />
             </ScrollView>
         );

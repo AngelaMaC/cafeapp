@@ -3,161 +3,121 @@ export const REVIEWS =
     {
         id: 0,
         menuId: 0,
-        rating: 5, 
-        text: "Favorite dish, hands down!",
-        author: "Tinus Lorvaldes",
-        date: "2018-10-25T16:30Z"
+        image: require("../components/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg"),  
+        title: "Avocado Toast",
+        description: "Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.",
+        allergy: "Gluten, Soy"
     },
     {
         id: 1,
         menuId: 0,
-        rating: 4, 
-        text: "Beautiful and tasty - I'll order this again.",
-        author: "Brennen Ech",
-        date: "2017-06-17T03:33Z"
+        image: require("../components/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg"),
+        title: "Avocado Toast",
+        description: "Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.",
+        allergy: "Gluten, Soy"
     },
     {
         id: 2,
         menuId: 0,
-        rating: 5, 
-        text: "Magnificent!",
-        author: "McKenzie Sebastian",
-        date: "2019-02-18T18:12Z"
+        image: require("../components/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg"),
+        title: "Avocado Toast",
+        description: "Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.",
+        allergy: "Gluten, Soy"
     },
     {
         id: 3,
         menuId: 0,
-        rating: 5, 
-        text: "Like a bowl of sunshine.",
-        author: "Jordan Runn",
-        date: "2019-08-04T20:11Z"
+        image: require("../components/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg"),
+        title: "Avocado Toast",
+        description: "Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.",
+        allergy: "Gluten, Soy"
     },
     {
         id: 4,
         menuId: 0,
-        rating: 4, 
-        text: "These cinnamon rolls are to die for!",
-        author: "Ann Dabramov",
-        date: "2018-07-23T19:44Z"
+        image: require("../components/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg"),
+        title: "Avocado Toast",
+        description: "Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.",
+        allergy: "Gluten, Soy"
     },
     {
         id: 5,
         menuId: 1,
-        rating: 4, 
-        text: "The sweet potatoes were a bit overdone but overall the dish was great.",
-        author: "Brennen Ech",
-        date: "2017-06-17T03:33Z"
+        image: require("../components/images/ella-olsson-6UxD0NzDywI-unsplash.jpg"),
+        title: "Buddha Bowl",
+        description: "Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.",
+        allergy: "Nuts, Soy"
     },
     {
         id: 6,
         menuId: 1,
-        rating: 5, 
-        text: "I will order again and again!",
-        author: "McKenzie Sebastian",
-        date: "2019-02-18T18:12Z"
+        image: require("../components/images/ella-olsson-6UxD0NzDywI-unsplash.jpg"),
+        title: "Buddha Bowl",
+        description: "Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.",
+        allergy: "Nuts, Soy"
     },
     {
         id: 7,
         menuId: 1,
-        rating: 5, 
-        text: "My favorite coffee drink.",
-        author: "Jordan Runn",
-        date: "2019-08-04T20:11Z"
+        image: require("../components/images/ella-olsson-6UxD0NzDywI-unsplash.jpg"),
+        title: "Buddha Bowl",
+        description: "Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.",
+        allergy: "Nuts, Soy"
     },
     {
         id: 8,
         menuId: 1,
-        rating: 4, 
-        text: "Loved it!",
-        author: "Ann Dabramov",
-        date: "2018-07-23T19:44Z"
+        image: require("../components/images/ella-olsson-6UxD0NzDywI-unsplash.jpg"),
+        title: "Buddha Bowl",
+        description: "Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.",
+        allergy: "Nuts, Soy"
     },
     {
         id: 9,
         menuId: 1,
-        rating: 5, 
-        text: "This dish is the bomb!",
-        author: "Tinus Lorvaldes",
-        date: "2018-10-25T16:30Z"
+        image: require("../components/images/ella-olsson-6UxD0NzDywI-unsplash.jpg"),
+        title: "Buddha Bowl",
+        description: "Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.",
+        allergy: "Nuts, Soy"
     },
     {
         id: 10,
         menuId: 2,
-        rating: 5, 
-        text: "I can't get enough.",
-        author: "McKenzie Sebastian",
-        date: "2019-02-18T18:12Z"
+        image: require("../components/images/nathan-dumlao-6ZWhi3YhDY8-unsplash-2.jpg"),
+        title: "Steamed Vanilla Soy Latte",
+        description: "And rich, cappuccino breve, acerbic single origin crema roast java robust",
+        allergy: "Soy"
     },
     {
         id: 11,
         menuId: 2,
-        rating: 5, 
-        text: "My favorite dish.",
-        author: "Jordan Runn",
-        date: "2019-08-04T20:11Z"
+        image: require("../components/images/nathan-dumlao-6ZWhi3YhDY8-unsplash-2.jpg"),
+        title: "Coconut Milk Frozen Coffee",
+        description: "Single origin as, beans half and half, roast body dark barista body galão barista robusta.",
+        allergy: "Nuts"
     },
     {
         id: 12,
         menuId: 2,
-        rating: 4, 
-        text: "Mouth-watering indeed.",
-        author: "Ann Dabramov",
-        date: "2018-07-23T19:44Z"
+        image: require("../components/images/nathan-dumlao-6ZWhi3YhDY8-unsplash-2.jpg"),
+        title: "Coffee, Black",
+        description: "Roast body dark barista body",
+        allergy: "None"
     },
     {
         id: 13,
         menuId: 2,
-        rating: 5, 
-        text: "Delicious!",
-        author: "Tinus Lorvaldes",
-        date: "2018-10-25T16:30Z"
+        image: require("../components/images/nathan-dumlao-6ZWhi3YhDY8-unsplash-2.jpg"),
+        title: "Decaf Delight",
+        description: "Decaffeinated, affogato, single shot wings decaffeinated strong latte",
+        allergy: "None"
     },
     {
         id: 14,
         menuId: 2,
-        rating: 4, 
-        text: "Best cinnamon rolls in town.",
-        author: "Brennen Ech",
-        date: "2017-06-17T03:33Z"
-    },
-    {
-        id: 15,
-        menuId: 3,
-        rating: 5, 
-        text: "My favorite coffee drink.",
-        author: "Jordan Runn",
-        date: "2019-08-04T20:11Z"
-    },
-    {
-        id: 16,
-        menuId: 3,
-        rating: 4, 
-        text: "I'll order two next time!",
-        author: "Ann Dabramov",
-        date: "2018-07-23T19:44Z"
-    },
-    {
-        id: 17,
-        menuId: 3,
-        rating: 5, 
-        text: "Delicious!",
-        author: "Tinus Lorvaldes",
-        date: "2018-10-25T16:30Z"
-    },
-    {
-        id: 18,
-        menuId: 3,
-        rating: 4, 
-        text: "Beautiful presentation on a plate.",
-        author: "Brennen Ech",
-        date: "2017-06-17T03:33Z"
-    },
-    {
-        id: 19,
-        menuId: 3,
-        rating: 5, 
-        text: "This dish was super tasty!",
-        author: "McKenzie Sebastian",
-        date: "2019-02-18T18:12Z"
+        image: require("../components/images/nathan-dumlao-6ZWhi3YhDY8-unsplash-2.jpg"),
+        title: "Green Tea (Warm or Iced)",
+        description: "Green tea, iced or hot.",
+        allergy: "None"
     }
 ]
