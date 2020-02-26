@@ -12,7 +12,7 @@ class Directory extends Component {
     }
 
     static navigationOptions = {
-        title: 'Directory'
+        title: 'HealthySteps Cafe | Menus'
     };
 
     render() {

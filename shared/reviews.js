@@ -11,8 +11,8 @@ export const REVIEWS =
     {
         id: 1,
         menuId: 0,
-        image: require("../components/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg"),
-        title: "Avocado Toast",
+        image: require("../components/images/toa-heftiba-W6sqUYlJRiw-unsplash.jpg"),
+        title: "French Toast with Fresh Berries",
         description: "Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.",
         allergy: "Gluten, Soy"
     },
@@ -20,15 +20,15 @@ export const REVIEWS =
         id: 2,
         menuId: 0,
         image: require("../components/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg"),
-        title: "Avocado Toast",
+        title: "Tofu Scramble",
         description: "Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.",
         allergy: "Gluten, Soy"
     },
     {
         id: 3,
         menuId: 0,
-        image: require("../components/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg"),
-        title: "Avocado Toast",
+        image: require("../components/images/toa-heftiba-W6sqUYlJRiw-unsplash.jpg"),
+        title: "Breakfast Burritos",
         description: "Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.",
         allergy: "Gluten, Soy"
     },
@@ -36,7 +36,7 @@ export const REVIEWS =
         id: 4,
         menuId: 0,
         image: require("../components/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg"),
-        title: "Avocado Toast",
+        title: "Giant Cinnamon Roll",
         description: "Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.",
         allergy: "Gluten, Soy"
     },

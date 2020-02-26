@@ -6,7 +6,7 @@ import { View, Image, Button, Text } from 'react-native';
 class Home extends Component {
 
     static navigationOptions = {
-        title: 'Home'
+        title: 'Healthy Steps Cafe'
     }
 
     render() {
