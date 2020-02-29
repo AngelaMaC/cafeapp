@@ -6,9 +6,10 @@ import { DISHES } from '../shared/dishes'
 
 function RenderMenu(menu) { 
     if (menu) {
+        // console.log(menu["image"]);
         return (
             <Card
-                featuredTitle={menu.name}
+                featuredTitle={menu.menu.name}
                 image={require('./images/toa-heftiba-6bKpHAun4d8-unsplash.jpg')}>
                 <Text style={{margin: 10}}>
                     {menu.description}
