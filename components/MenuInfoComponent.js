@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import { Text, View, ScrollView, FlatList } from 'react-native';
 import { Card, Icon } from 'react-native-elements';
 import { MENUS } from '../shared/menus';
-import { REVIEWS } from '../shared/reviews'
+import { DISHES } from '../shared/dishes'
 
-function RenderMenu({menu}) {   
-    
+function RenderMenu(menu) { 
     if (menu) {
         return (
             <Card
@@ -20,20 +19,25 @@ function RenderMenu({menu}) {
     return <View />;
 }
 
-function RenderReviews({reviews}) {
+function RenderDishes({dishes}) {
 
-    const renderReviewItem = ({item}) => {
+    // const {reviews} = props;
+
+    const renderDishItem = ({item}) => {
         return (
             <View style={{margin: 5}}>
                 <Card 
                 image={item.image}>                
                 <Icon                    
                     name='heart-o'
+                    // name={props.favorite ? 'heart' : 'heart-o'}
                     type='font-awesome'
                     color='#f50'
                     size={10}
                     raised
                     reverse
+                    // onPress={() => props.favorite ?
+                    //     console.log('Already set as a favorite') : props.markFavorite()}
                     />                
                 <Text style={{fontSize: 14, fontWeight: 'bold'}}>{item.title}</Text>
                 <Text style={{fontSize: 12}}>{item.description}</Text>
@@ -46,8 +50,8 @@ function RenderReviews({reviews}) {
     return (
         <Card title='Menu Items'>
             <FlatList
-                data={reviews}
-                renderItem={renderReviewItem}
+                data={dishes}
+                renderItem={renderDishItem}
                 keyExtractor={item => item.id.toString()}
             />
         </Card>
@@ -60,7 +64,7 @@ class MenuInfo extends Component {
         super(props);
         this.state = {
             menus: MENUS,
-            reviews: REVIEWS,
+            dishes: DISHES,
             // favorite: false
         };
     }
@@ -76,14 +80,14 @@ class MenuInfo extends Component {
     render() {
         const menuId = this.props.navigation.getParam('menuId');
         const menu = this.state.menus.filter(menu => menu.id === menuId)[0];
-        const reviews = this.state.reviews.filter(review => review.menuId === menuId);
+        const dishes = this.state.dishes.filter(dish => dish.menuId === menuId);
         return (
             <ScrollView>
                 <RenderMenu menu={menu}
                     // favorite={this.state.favorite}
                     // markFavorite={() => this.markFavorite()}
                 />
-                <RenderReviews reviews={reviews} />
+                <RenderDishes dishes={dishes} />
             </ScrollView>
         );
     }

@@ -17,7 +17,7 @@ export const MENUS = [
         id: 2,
         name:"Beverages",
         image: "../components/images/nathan-dumlao-6ZWhi3YhDY8-unsplash-2.jpg",        
-        featured: false,
+        featured: true,
         description: "Explore our drink menu"
     }
 ];
