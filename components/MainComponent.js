@@ -7,6 +7,7 @@ import Directory from './DirectoryComponent';
 import MenuInfo from './MenuInfoComponent';
 import About from './AboutComponent';
 import Contact from './ContactComponent';
+import Review from './ReviewComponent';
 import { Icon } from 'react-native-elements';
 import SafeAreaView from 'react-native-safe-area-view';
 console.disableYellowBox = true;
@@ -108,6 +109,28 @@ const ContactNavigator = createStackNavigator(
         })
     }
 );
+const ReviewNavigator = createStackNavigator(
+    {
+        Review: { screen: Review }
+    },
+    {
+        navigationOptions: ({navigation}) => ({
+            headerStyle: {
+                backgroundColor: '#336B37'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            },
+            headerLeft: <Icon
+                name='edit'
+                type='font-awesome'
+                iconStyle={styles.stackIcon}
+                onPress={() => navigation.toggleDrawer()}
+            />
+        })
+    }
+);
 
 const CustomDrawerContentComponent = props => (
     <ScrollView>
@@ -183,6 +206,20 @@ const MainNavigator = createDrawerNavigator(
                     />
                 )
             }
+        },
+        Review: { 
+            screen: ReviewNavigator,
+            navigationOptions: {
+                drawerLabel: 'Review Us',
+                drawerIcon: ({tintColor}) => (
+                    <Icon
+                        name='edit'
+                        type='font-awesome'
+                        size={24}
+                        color={tintColor}
+                    />
+                )
+            }
         }
     },
     {
@@ -198,7 +235,7 @@ class Main extends Component {
                 flex: 1, 
                 paddingTop: Platform.OS === 'ios' ? 0 : Expo.Constants.statusBarHeight
             }}>
-                <MainNavigator />
+                <MainNavigator />                
             </View>
         );
     }

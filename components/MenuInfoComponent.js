@@ -6,13 +6,13 @@ import { DISHES } from '../shared/dishes'
 
 function RenderMenu(menu) { 
     if (menu) {
-        // console.log(menu["image"]);
         return (
             <Card
                 featuredTitle={menu.menu.name}
-                image={require('./images/toa-heftiba-6bKpHAun4d8-unsplash.jpg')}>
-                <Text style={{margin: 10}}>
-                    {menu.description}
+                image={menu.menu.image}>
+                <Text style={{margin: 10, textAlign: 'center'}}>
+                    {/* {menu.menu.description} */}
+                    From our famous cinnamon rolls to savory breakfast burritos and tofu scramble, you'll be sure to find your breakfast faves right here
                 </Text>
             </Card>
         );
@@ -28,7 +28,8 @@ function RenderDishes({dishes}) {
         return (
             <View style={{margin: 5}}>
                 <Card 
-                image={item.image}>                
+                image={item.image}
+                featuredTitle={item.name}>                
                 <Icon                    
                     name='heart-o'
                     // name={props.favorite ? 'heart' : 'heart-o'}
