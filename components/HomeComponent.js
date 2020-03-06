@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Image, Button, StyleSheet, Icon } from 'react-native';
+import { View, Image } from 'react-native';
 
 
 class Home extends Component {
@@ -14,7 +14,7 @@ class Home extends Component {
                 <Image 
                 style={{width: '100%', height: '85%'}}
                 source={require('./images/cafe-img-1.jpg')}
-                />                                
+                />                                    
             </View>
         );
     }

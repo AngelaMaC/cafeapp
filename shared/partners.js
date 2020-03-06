@@ -1,30 +1,30 @@
 export const PARTNERS = [
     {
         id: 0,
-        name: "Bootstrap Outfitters",
-        image: "/assets/images/bootstrap-logo.png",
-        featured: false,
-        description: "Bootstrap Outfitters supplies you with the gear you need at prices you can't beat."
+        name: "NutritionFacts.org",
+        image: require("../components/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg"),
+        featured: true,
+        description: "Nutrition information at it's best!"
     },
     {
         id: 1,
-        name: "Git Out Expeditions",
-        image: "/assets/images/git-logo.png",
-        featured: false,
-        description: "Join Git Out Expeditions to explore new horizons with a group of other adventurers!"
+        name: "Plant Pure Nation",
+        image: require("../components/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg"),
+        featured: true,
+        description: "Get connected in our community with like-minded people who want to learn all about eating and living healthfully."
     },
     {
         id: 2,
-        name: "Mongo Fly Shop",
-        image: "/assets/images/mongo-logo.png",
-        featured: false,
-        description: "Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop."
+        name: "PCRM",
+        image: require("../components/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg"),
+        featured: true,
+        description: "A resource for all, and especially physicians. See how you can get involved!"
     },
     {
         id: 3,
-        name: "Node Outdoor Apparel",
-        image: "/assets/images/node-logo.png",
+        name: "Fleet Feet",
+        image: require("../components/images/ella-olsson-2IxTgsgFi-s-unsplash.jpg"),
         featured: true,
-        description: "From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered."
+        description: "Keeping active with our partner in Fleet Feet is the best!"
     }
 ]
